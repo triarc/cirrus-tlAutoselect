@@ -1,8 +1,8 @@
 {
   "name": "cirrus-tlAutoselect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
-    "Marco Bachmann <mb@triarc-labs.com>"
+    "Krzysztof Burlinski <kb@triarc-labs.com>"
   ],
   "main": "tlAutoselect.js",
   "moduleType": [
