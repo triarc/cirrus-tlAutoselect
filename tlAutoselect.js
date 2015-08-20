@@ -8,10 +8,10 @@ var Triarc;
                 link: function (scope, element) {
                     var focusedElement;
                     var elements = element.find("input").addBack("input");
-                    elements.on("click", function () {
-                        if (focusedElement !== element) {
-                            element.select();
-                            focusedElement = element;
+                    elements.on("click", function (event) {
+                        if (focusedElement !== event.target) {
+                            $(event.target).select();
+                            focusedElement = event.target;
                         }
                     });
                     elements.on("blur", function () {
