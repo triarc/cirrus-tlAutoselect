@@ -7,13 +7,14 @@ var Triarc;
                 restrict: "A",
                 link: function (scope, element) {
                     var focusedElement;
-                    element.on("click", function () {
+                    var elements = element.find("input").addBack("input");
+                    elements.on("click", function () {
                         if (focusedElement !== element) {
                             element.select();
                             focusedElement = element;
                         }
                     });
-                    element.on("blur", function () {
+                    elements.on("blur", function () {
                         focusedElement = null;
                     });
                 }
