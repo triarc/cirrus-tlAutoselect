@@ -2,7 +2,8 @@ var Triarc;
 (function (Triarc) {
     var Web;
     (function (Web) {
-        angular.module("tlAutoselect", []).directive("tlAutoselect", function () {
+        angular.module("tlAutoselect", [])
+            .directive("tlAutoselect", function () {
             return {
                 restrict: "A",
                 link: function (scope, element) {
